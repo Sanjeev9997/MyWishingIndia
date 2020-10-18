@@ -1,0 +1,89 @@
+<html><head>
+	<meta name="viewport"
+content="width=device-width,initial-scale=1.0" 
+	>
+	<style >
+     .cs{
+     	text-align: center;
+     	font-size: 32px;
+     	text-decoration-style: inherit;
+     	color: #ff1010;
+     }
+	p{
+		text-align: center;
+		font-size: 30px;
+		margin-top:30px;
+	}	
+	.back {
+		background-image:url(/home/sanjeev/Downloads/navratri.gif); 
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		background-size: contain;
+	}
+	input{
+		margin-top: 400px;
+	}
+	
+	</style>
+	
+<script type="text/javascript">
+	
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 17, 2020 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+  function myFunction(){
+
+     var na;
+  	na=document.getElementById("Myname");
+  	document.getElementById("name")=na;
+
+  }
+</script>
+</head>
+
+<body class="back">
+ 
+ <div class="cs">
+ <p><marquee direction="right"><p id="name" title="sanjeev"></p>&nbsp की तरफ से नवरात्रि की हार्दिक शुभकामनायें</marquee></p>
+   
+ </div>
+ 
+    
+	
+	<input  type="text" name="Name" id="Myname" hint="Name" size="contain"><a class="footerbtn" href="whatsapp://send?text=*Happy Diwali In Advance* Sent a Special Wish. ? Click here to see magic -> https://sanjeev9997.github.io/MyWishingIndia/." data-action="share/whatsapp/share"
+>Send</a>
+<script type="text/javascript">
+	var name;
+	name=document.getElementById("Myname").write(a);
+	var getname=document.getElementById("Name");
+	getname.text(name);
+
+</script>
+</body>
+</html>
